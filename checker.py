@@ -25,11 +25,9 @@ def pstrength(s):
     ansl = [i for i in h if i in low]
     ansm = [j for j in h if i in misc or i in misc2]
     i = 0
-    length = 0
-    if (len(h) > 7):
-        length = 2
+    length = len(h) / 2
     if (len(ansi) != 0):
-        i = 2
+        i = 1
     c = 0
     if (len(ansc) != 0):
         c = 1
@@ -41,7 +39,7 @@ def pstrength(s):
         lets = 3
     m = 0
     if (len(ansm) != 0):
-        m = 4
+        m = 3
     ans = length + i + lets + m
     if (ans > 10):
         ans = 10
